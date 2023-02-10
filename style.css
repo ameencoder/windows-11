@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background-image: url(./img/bg.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shortcuts {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shortcuts img {
+  height: 48px;
+  width: 48px;
+}
+
+.taskbar {
+  padding: 0px 12px;
+  background-color: #e9ecef;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.right {
+  padding: 0px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.middle img {
+  height: 32px;
+}
+.right img {
+  height: 20px;
+}
+
+.left_middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.left_middle span {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.middle img {
+  transition: all 0.4s;
+}
+
+.middle img:not(:first-child):hover {
+  transition: all 0.4s;
+  transform: scale(0.85);
+}
