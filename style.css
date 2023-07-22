@@ -85,3 +85,21 @@ img:hover {
   transition: all 0.4s;
   transform: scale(0.85);
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  body::after {
+    background-color: blueviolet;
+    content: "THIS VERSION IS NOT AVAILABLE FOR MOBILES AND TABLETS.";
+    color: orange;
+    height: 100vh;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+  }
+}
